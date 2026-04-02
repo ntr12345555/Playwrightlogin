@@ -1,1 +1,12 @@
-this is login sucessfully after pull req
+s="aaabbbccaabbcccc"
+
+ss=""
+co=1
+for i in range(1,len(s)):
+  if s[i]==s[i-1]:
+    co+=1
+  else:
+    ss+=s[i-1]+str(co)
+    co=1
+ss+=s[-1]+str(co)
+print(ss)
